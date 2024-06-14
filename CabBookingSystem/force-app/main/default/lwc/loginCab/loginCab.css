@@ -1,0 +1,17 @@
+/* :host()
+{
+    --slds-c-card-color-background:lightpink;
+} */
+
+:host {
+    --slds-c-card-color-background: lightpink;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}

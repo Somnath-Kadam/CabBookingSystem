@@ -1,0 +1,24 @@
+<!-- <template>
+    <lightning-card title="Cab Login Page">
+        <lightning-input label="User Name" name="username" value={username} onchange={handleUsernameChange}></lightning-input>
+        <lightning-input label="Password" name="password" value={password} onchange={handlePasswordChange} type="password "></lightning-input>
+        <br>
+        <lightning-button label="Login" variant="brand" onclick={handleLogin}></lightning-button>
+        
+
+    </lightning-card>
+</template>
+ -->
+ <template>
+    <lightning-card title="Cab Login Page">
+        <div class="input-container">
+            <lightning-input label="User Name" name="username" value={username} onchange={handleUsernameChange}></lightning-input>
+            <lightning-input label="Password" name="password" value={password} onchange={handlePasswordChange} type="password"></lightning-input>
+        </div>
+        <div class="button-container">
+            <lightning-button label="Login" variant="brand" onclick={handleLogin}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
+
+

@@ -1,0 +1,13 @@
+.button-group {
+    display: flex;
+    gap: 10px; /* Adjust the gap as needed */
+    margin-top: 20px; /* Optional: Add some top margin for spacing above the buttons */
+}
+
+.button {
+    /* You can add additional button-specific styles here if needed */
+}
+:host()
+{
+    --slds-c-card-color-background:lightpink;
+}

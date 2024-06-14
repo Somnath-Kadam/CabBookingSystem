@@ -1,0 +1,35 @@
+<template>
+    <lightning-card title="Premium Cab Services">
+        <div class="slds-p-around_medium">
+            <p class="slds-align_absolute-center">
+                <b>Sign Up to book a cab</b></p>
+                <br>
+                <div class="slds-grid slds-grid_align-center">
+                    <lightning-button label="Sing Up" variant="brand" class="slds-m-right_small" onclick={handleSignUp}></lightning-button>
+                    <lightning-button label="Sing In" variant="brand" onclick={handleSubmit}></lightning-button>
+                    
+                </div>
+                <template if:true={showForm}>
+                <lightning-record-edit-form object-api-name="Cab_Customer__c" onsuccess={handleSuccess}>
+                    <lightning-messages></lightning-messages>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col">
+                            <lightning-input-field field-name="Name" required></lightning-input-field>
+                            <lightning-input-field field-name="Customer_Email__c" required ></lightning-input-field>
+                            <lightning-input-field field-name="User_Name__c" required ></lightning-input-field>
+                            <lightning-input-field field-name="Password__c" required ></lightning-input-field>
+
+                        </div>
+                    </div>
+                    <div class="slds-m-top_medium">
+                        <lightning-button label="Submit" variant="brand" class="slds-align_absolute-center" type="submit"></lightning-button>
+                    </div>
+
+                </lightning-record-edit-form>
+                
+                </template>
+
+        </div>
+
+    </lightning-card>
+</template>     

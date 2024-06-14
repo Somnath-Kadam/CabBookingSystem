@@ -1,0 +1,74 @@
+<!-- <template>
+    <lightning-card title="Progress Indicator">
+      <lightning-progress-indicator current-step={currentStep} type="base" variant="base">
+      <lightning-progress-step label="Step 1" value="1" onclick={handleOnSteoClick}></lightning-progress-step>
+      <lightning-progress-step label="Step 2" value="2" onclick={handleOnSteoClick}></lightning-progress-step>
+      <lightning-progress-step label="Step 3" value="3" onclick={handleOnSteoClick}></lightning-progress-step>
+ </lightning-progress-indicator>
+ <template if:true={isStepOne}>
+    <div>
+        <h1><b>Welcome to Premium cab we are currently serve in the following location</b></h1>
+        <c-map></c-map>
+    </div>
+ </template>
+ <template if:true={isStepTwo}>
+    <c-cab-reservation></c-cab-reservation>
+    
+ </template>
+ <template if:true={isStepThree}>
+    <div>***************.....THANK YOU.......HOPE YOU HAVE A WANDERFUL RIDE ........................************</div>
+    
+ </template>
+ 
+ <template if:true={isEnablePrev}>
+    <lightning-button variant="brand" label="Back" onclick={handlePrev}></lightning-button>
+
+ </template>
+ <template if:true={isEnableNext}>
+    <lightning-button variant="brand" label="Next" onclick={handleNext}></lightning-button>
+
+ </template>
+ <template if:true={isEnableFinish}>
+    <lightning-button label="Finish" variant="brand" onclick={handleFinish}></lightning-button>
+
+ </template>
+    </lightning-card>
+</template> -->
+<template>
+    <lightning-card title="Progress Indicator">
+        <lightning-progress-indicator current-step={currentStep} type="base" variant="base">
+            <lightning-progress-step label="Step 1" value="1" onclick={handleOnStepClick}></lightning-progress-step>
+            <lightning-progress-step label="Step 2" value="2" onclick={handleOnStepClick}></lightning-progress-step>
+            <lightning-progress-step label="Step 3" value="3" onclick={handleOnStepClick}></lightning-progress-step>
+        </lightning-progress-indicator>
+
+        <template if:true={isStepOne}>
+            <div>
+                <h1><b>Welcome to Premium cab we are currently serve in the following location</b></h1>
+                <c-map></c-map>
+            </div>
+        </template>
+
+        <template if:true={isStepTwo}>
+            <c-cab-reservation></c-cab-reservation>
+        </template>
+
+        <template if:true={isStepThree}>
+            <div>***************.....THANK YOU.......HOPE YOU HAVE A WONDERFUL RIDE ........................************</div>
+        </template>
+
+        <div class="button-group">
+            <template if:true={isEnablePrev}>
+                <lightning-button class="button" variant="brand" label="Back" onclick={handlePrev}></lightning-button>
+            </template>
+
+            <template if:true={isEnableNext}>
+                <lightning-button class="button" variant="brand" label="Next" onclick={handleNext}></lightning-button>
+            </template>
+
+            <template if:true={isEnableFinish}>
+                <lightning-button class="button" label="Finish" variant="brand" onclick={handleFinish}></lightning-button>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,9 +1,4 @@
 # CabBookingSystem
-Description: This is a Cab Booking Application. Using this application customers can book an inter-city cab. The driver 
-object and vehicle object needs to have 4-5 records created initially. The cab reservation object requires all customer 
-data and driver-cab preferences to be entered/selected. The automation used helps create the customer record and 
-also sends emails to the customer and driver on the booking(record creation in the cab reservation object).
-
 Components –
  Singup Component- Developed a SignUp component using Lightning Web Components (LWC) for a Salesforce 
 application. The component streamlines user registration by providing an intuitive and responsive interface. Key 
